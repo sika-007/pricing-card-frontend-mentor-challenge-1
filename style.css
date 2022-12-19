@@ -1,0 +1,115 @@
+html {
+  box-sizing: border-box;
+  font-family: karla;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h2, h4, p {
+  margin: 0;
+}
+
+body {
+  background-color: #e5eff5;
+  margin: 0px;
+  padding: 20px;
+}
+
+#card {
+  background-color: white;
+  width: 625px;
+  height: 480px;
+  border-radius: 7px;
+  /*overflow: hidden. See line 50 for more info*/
+  box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.35);
+}
+
+#top-section {
+  width: 100%;/*To make it fill up the entire width of its parent container*/
+  height: 45%;
+  padding: 35px;
+  color: rgb(152, 166, 189)
+}
+
+#bottom-section {
+  width: 100%;
+  height: 55%;
+}
+
+#bottom-left-section {
+  display: inline-block; /*Inline does not respect height and width elements so thiis is whu=y we must use the inline block property value*/ 
+  width: 50%;
+  height: 100%;
+  vertical-align: top; /*Another quirk of css. This property only applies when the display is in inline-block mode. This will be used t align the two div elements*/
+  background-color: rgba(42, 178, 176);
+  color: rgb(229, 239, 245);
+  border-bottom-left-radius: 7px;
+  /* OR We can also set the overflow property to hidden in the #card css rule to ensure that anything that trespasses the borders if the card will not show*/
+  padding: 35px;
+}
+
+#bottom-right-section {
+  display: inline-block; /*remember to rmemove any whitespace between the two div on the same line (Just a css quirk)*/
+  width: 50%;
+  height: 100%;
+  vertical-align: top;
+  background-color: rgba(42, 178, 176, 0.88);
+  color: rgb(229, 239, 245);
+  border-bottom-right-radius: 7px;
+  padding: 35px;
+}
+
+button {
+  background-color: #c0df34;
+  text-align: left;
+  border: none;
+  margin-top: 25px;
+  width: 100%;
+  height: 25%;
+  border-radius: 5px;
+  text-align: center;
+  color: rgb(229, 239, 245);
+  box-shadow: 20px 11px 60px -10px rgba(0,0,0,0.75);
+  font-weight: 700
+}
+
+#sub-price-1, #sub-price-2 {
+  display: inline-block;
+  margin-bottom: 10px;
+  vertical-align: middle;
+  /*Or we can set the position property to fixed and manipulate the top, left, buttom, or right properties afterwards*/
+  padding-top: 10px
+}
+
+#sub-price-2{
+  padding-left: 6px;
+}
+
+ul {
+  font-size: 0.92rem;
+  margin-top: 30px;
+  list-style: none;
+  padding: 0px;
+}
+
+li {
+  padding-top: 2px
+}
+
+#top-section p{
+  line-height: 1.6rem
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgba(192, 223, 52, 0.9);
+  /* Or opacity: 0.9;*/
+  transform: scale(1.02)
+}
+
+#paragraph-1 {
+  margin-top: 15px
+}
